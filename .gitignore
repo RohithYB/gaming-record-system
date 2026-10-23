@@ -1,0 +1,7 @@
+node_modules/
+gaming-frontend/node_modules/
+gaming-frontend/dist/
+.env
+.env.*
+!.env.example
+coverage/
