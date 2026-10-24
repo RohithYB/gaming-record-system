@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "test": "node --test"
+    "test": "node --test",
+    "dev:all": "concurrently -k \"npm run dev\" \"npm run dev --prefix gaming-frontend\""
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,8 @@
     "dotenv": "^18.0.9",
     "express": "^5.2.1",
     "mongoose": "^9.11.1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
   }
 }
